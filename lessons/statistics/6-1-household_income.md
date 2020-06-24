@@ -31,3 +31,30 @@ sample. What fraction of households reports a taxable income below the
 mean? How do the results depend on the assumed upper bound?**
 
 ## SOLUTION
+```python
+#mean
+sample_mean = Mean(sample)
+#74279
+
+
+#median
+Median(sample)
+#51226
+
+#skewness
+Skewness(sample)
+#4.95
+
+#pearson's skewness
+PearsonMedianSkewness(sample)
+#0.736
+
+#percentage of households income below mean
+#need to calculate the cdf (percentage lower) than the mean, which is calculated above
+
+cdf.Prob(sample_mean)
+#0.66
+
+```
+
+
