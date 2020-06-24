@@ -9,7 +9,7 @@ Compute Pearson’s and Spearman’s correlations.
 
 How would you characterize the relationship between these variables?
 
-# SOLUTION
+## SOLUTION
 #### Scatterpolot of birth weight vs. mother's age
 ```python
 ages = live['agepreg']
@@ -24,7 +24,7 @@ thinkplot.Config(xlabel='Age (years)',
 
 
 #### Percentiles of birth weight vs. mother's age
-
+![Image of Scatterplot](https://github.com/markafunke/dsp/blob/master/lessons/statistics/percentiles_plot.png)
 
 #### Correlations
 ```python
@@ -34,3 +34,4 @@ Corr(ages, weights), SpearmanCorr(ages, weights)
 
 #### Findings
 The scatterplot and correlations show no meaningful relationship between the age of the mother and the weight of the child.
+The binned percentiles show a linear increase early on (ages 15 to about 25, then no impact.
