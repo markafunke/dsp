@@ -21,6 +21,7 @@ I admittedly struggled with this one, and walked through Think Stats example sol
 * The first function, SimulateGame, uses a random exponential variable to simulate the time between goals, and estimates goals scored in a single game, or t = 1
 * The second function runs this Simulation m times and stores the estimates in a list, then calculates error and plots the PMF along with a 90% CI
 
+```python
 def SimulateGame(lam):
     """Simulates a game and returns the estimated goal-scoring rate.
 
@@ -58,7 +59,7 @@ def SimulateGames(lam, m):
     pmf = thinkstats2.Pmf(estimates)
     thinkplot.Hist(pmf)
     thinkplot.Config(xlabel='Goals scored', ylabel='PMF')
-
+```
 
 #### Insights
 * Not biased, as error is trending towards 0 as we increase the amount of games
